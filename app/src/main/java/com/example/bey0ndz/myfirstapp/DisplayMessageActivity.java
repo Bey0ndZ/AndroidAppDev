@@ -23,7 +23,9 @@ public class DisplayMessageActivity extends ActionBarActivity {
         textView.setText(message);
 
         // Displaying the TextView in the UI.
+        setContentView(R.layout.activity_display_message);
         setContentView(textView);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
